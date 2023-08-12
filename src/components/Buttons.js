@@ -2,7 +2,6 @@ import './styling.css';
 import satData from './satData';
 
 const Buttons = (props) => {
-
   
   
 
@@ -15,7 +14,7 @@ const Buttons = (props) => {
           </button>
         );
       })}
-      <button onClick={props.setSat(satData)}>All Orbits</button>
+      <button onClick={() => props.setSat(satData)}>All Orbits</button>
     </div>
   );
 };
